@@ -5,8 +5,7 @@ import org.apache.spark.sql.SparkSession
 object SparkApp {
   def main(args: Array[String]): Unit = {
     // 创建 SparkSession
-    val spark = SparkSession.builder()
-      .appName("Spark IntelliJ Test")
+    val spark = SparkSession.builder().appName("Spark IntelliJ Test")
       .master("local[*]") // 使用本地模式
       .getOrCreate()
 
